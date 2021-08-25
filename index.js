@@ -38,5 +38,6 @@ function closeForm() {
 }
 var i = 0;
   function buttonClick() {
-      document.getElementById('inc').value = ++i;
+
+          document.getElementById('inc').value = ++i;
   }
