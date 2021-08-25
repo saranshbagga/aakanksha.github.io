@@ -1,0 +1,285 @@
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+#form1{
+  height: 50px;
+  width: 540px;
+  position: absolute;
+  left: 330px;
+  top: 50px;
+}
+.logo{
+  border-radius: 30%;
+  height: 150px;
+
+}
+.sbutton{
+  margin-top: 30px;
+  height: 50px;
+  position: absolute;
+  left: 720px;
+  top: 20px;
+}
+.fas{
+  height:20px;
+}
+.back{
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.sign-in{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.cart{
+  position: absolute;
+  right: 250px;
+  top: 10px;
+}
+#inc{
+  background-color: inherit;
+  border-style: none;
+  width: 20px;
+}
+.heading{
+  padding: 50px 0 25px;
+}
+#title{
+  background-color: #64C9CF;
+  color: #fff;
+  text-align:left;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+}
+.container-fluid{
+  padding: 3% 10% 0;
+}
+.iphone6{
+  transform: rotate(25deg);
+  width:60%;
+  position: absolute;
+  right: 30%;
+}
+.img{
+  position: relative;
+}
+body{
+  font-family: 'Montserrat-light', sans-serif;
+  text-align:center;
+}
+p{
+  color: #8f8f8f;
+}
+
+/* Sections */
+
+.colored-section{
+  color: #fff;
+}
+
+.white-section{
+  background-color: #fff;
+}
+
+
+/* Headings */
+
+.big-heading{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+
+}
+.opt{
+  margin: 1% 25% 5% 27%;
+  padding: 5px;
+
+  background-color: #F8485E;
+}
+.opt .option{
+  display:inline;
+  padding: 10px 20px 10px 20px;
+  line-height: 1.5;
+
+}
+li .link{
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+  text-decoration: none;
+
+}
+
+
+
+
+/* Testimonials section */
+#testimonials{
+  background-color: #ef8172;
+}
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+.test-image{
+  width: 30%;
+  border-radius: 35%;
+  margin: 5px 5px 5px 300px;
+
+}
+#press{
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+.press-img{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+#Products{
+  margin-bottom: 10px;
+}
+ /* Pricing Section */
+
+ #pricing{
+   padding: 100px;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+}
+ .pricing-column{
+   padding: 3% 2%;
+ }
+ .pricing-text{
+   font-size: 3rem;
+   line-height: 1.5;
+ }
+ .class-body1{
+   background-image: url("images/home-del.png");
+   background-size: cover;
+ }
+ .class-body2{
+   background-image: url("images/drc.png");
+   background-size: cover;
+ }
+ .class-body3{
+   background-image: url("images/medcamp.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+
+ }
+/* products */
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.card-img-top{
+  height: 15rem;
+}
+.view{
+  margin-top: 125px;
+}
+.medpro{
+  background-color: #ef8172;
+  padding-bottom: 5px;
+}
+.pro{
+  background-color: #fff;
+}
+.row hr{
+  width: 25%;
+  margin-top: 15px;
+}
+hr{
+  border-color: blue;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 25%;
+  margin: 25px auto;
+  background-color: #fff;
+}
+/* services */
+.accordion{
+  background-color: #64C9CF;
+}
+/* CTA section */
+#cta{
+  padding: 7% 15% 5%;
+}
+
+/* Footer section */
+.foot{
+  background-color: #64C9CF;
+  padding-bottom: 5px;
+}
+
+.foot p{
+  color: #fff;
+}
+
+
+#footer{
+  padding-top: 10px;
+}
+.social-icon{
+  margin:20px 10px 5px;
+}

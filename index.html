@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/c8daba456c.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <title>AAKANKSHA</title>
+
+</head>
+
+<body>
+
+  <!-- sign-in and cart -->
+  <div class="cart">
+    <button class="btn btn-lg btn-outline-light" onClick="buttonClick()">Cart <i class="fa fa-shopping-cart"></i><input type="text" id="inc" value="0" readonly></input></button>
+
+  </div>
+
+  <div class="sign-in">
+    <button onCLick="openForm()" class="btn btn-lg btn-outline-light" type="button"><i class="fas fa-sign-in-alt"></i>Sign-in/Sign-up</button>
+  </div>
+  <div class="form-popup" id="myForm">
+  <form action="index.html" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<!-- top container -->
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Search Bar -->
+        <div class="input-group">
+          <img class="logo" src="images/aakanksha.jpeg" alt="aakanksha logo">
+          <div class="form-outline">
+            <input type="search" id="form1" class="form-control" placeholder="Search medicines,camps,health brands,etc" />
+          </div>
+          <button type="button" class="btn btn-primary sbutton">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="options">
+
+          <ul class="opt">
+            <li class="option">
+              <a class="link" href="medprod.html">Knock Knock Medico</a>
+            </li>
+            <li class="option">
+              <a class="link" href="findloc.html">Health camp</a>
+            </li>
+            <li class="option">
+              <a class="link" href="bookapp.html">Doctor's Consultation</a>
+            </li>
+          </ul>
+        </div>
+        <section class="colored-section" id="testimonials">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="testimonial-text">Upto 60% off on first order of medicines.*</h2>
+                <img class="test-image" src="images/free-medicines.jpg" alt="free meds">
+              </div>
+              <div class="carousel-item">
+                <h2 class="testimonial-text">Free doctor consultation for the new members.*</h2>
+                <img class="test-image" src="images/freedoctor.jpeg" alt="free doc">
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">SOMETHING FOR EVERYONE</h2>
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Medicine at home</h3>
+          </div>
+          <div class="class-body1">
+            <h2 class="pricing-text">Free Home delivery within 24 hours</h2>
+            <a href="medprod.html" class="btn btn-lg col-12 btn-outline-dark" type="button">Order Now</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Doctor's Consultation</h3>
+          </div>
+          <div class="class-body2">
+
+            <h2 class="pricing-text">Online Doctor's Consultation 24*7</h2>
+            <a href="bookapp.html" class="btn btn-lg col-12 btn-outline-dark" type="button">Book Now</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="pricing-column col-lg-4">
+        <div class="card col-md-12">
+          <div class="card-header">
+            <h3>Health Camps</h3>
+          </div>
+          <div class="class-body3">
+            <h2 class="pricing-text">Information on nearby Health Camps and more</h2>
+            <a href="findloc.html" class="btn btn-lg col-12 btn-outline-dark" type="button">Find Location</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product List -->
+  <section id="Products">
+
+  <hr>
+  <div class="medpro container content">
+  <h2>Medical Safety Products</h2>
+  <div class="row">
+      <div class="col-sm-3">
+          <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="images/PPE.jpg" alt="PPE kit">
+              <div class="card-body text-center">
+                  <h5 class="card-title">PPE kit</h5>
+                  <p class="card-text">$200</p>
+                  <a onClick="ppe()" class="ppe btn btn-primary">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="images/sanitizer.jpg" alt="sanitizer">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sanitizer</h5>
+                    <p class="card-text">$25</p>
+                    <a onClick="sani()" class="sani btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="images/mask.jpg" alt="mask">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mask</h5>
+                    <p class="card-text">$5</p>
+                    <a onClick="mask()" class="mask btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card-body text-center">
+                <a href="medprod.html" class="view btn btn-info">View More</a>
+            </div>
+
+        </div>
+        <div class="pro container content">
+        <hr>
+        <h2>Nutritious Products</h2>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="images/oats.jpg" alt="Plain Oats">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Plain Oats</h5>
+                        <p class="card-text">$20</p>
+                        <a onClick="oats()" class="oats btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+              <div class="col-sm-3">
+                  <div class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="images/biscuits.jpg" alt="Dietary biscuits">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Dietary biscuits</h5>
+                          <p class="card-text">$10</p>
+                          <a onClick="biscuits()" class="biscuits btn btn-primary">Add to Cart</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3">
+                  <div class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="images/Almonds.jpg" alt="Almonds">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Almonds(500g)</h5>
+                          <p class="card-text">$250</p>
+                          <a onClick="almonds()" class="almonds btn btn-primary">Add to Cart</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3">
+                  <div class="card-body text-center">
+                      <a href="nutritems.html" class="view btn btn-info">View More</a>
+                  </div>
+
+              </div>
+              <hr />
+              <div class="medpro container content">
+
+              <h2>Top Medi Brands</h2>
+              <div class="row">
+                  <div class="col-sm-3">
+                      <div class="card" style="width: 20rem;">
+                          <img class="card-img-top" src="images/colgate.jpg" alt="Colgate">
+                          <div class="card-body text-center">
+                              <h5 class="card-title">COLGATE</h5>
+                          </div>
+                      </div>
+                  </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/cipla.jpg" alt="Cipla">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CIPLA</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/mankind.jpg" alt="mankind">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">MANKIND</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card-body text-center">
+                            <a href="viewbrands.html" class="view btn btn-info">View More</a>
+                        </div>
+                    </div>
+
+                  </section>
+
+
+                    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h2>Features:</h2>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>1. Kam KaJ, Health Care Services, Foodie, E-Learning, Fashion, Lifeline, Sports, Electronic Appliances, Social Spotlight and AAKANKSHA Social Welfare.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h2>Benefits:</h2>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>One stop solution for all your Healthcare needs</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h2>Why Best:</h2>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>AAKANKSHA is an MSME E-commerce platform registered under Indian government .It is a
+Consumer Service company providing all the services at one place for wide range of customers
+from different profession,age-groups,society.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Footer -->
+
+  <footer class="foot" id="footer">
+
+    <a href="#" class="social-icon fab fa-twitter"></a>
+    <a href="#" class="social-icon fab fa-facebook-f"></a>
+    <a href="#" class="social-icon fab fa-instagram"></a>
+    <a href="#" class="social-icon fas fa-envelope"></a>
+    <p><em>© Copyright 2021 AAKANKSHA</em></p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
